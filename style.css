@@ -1,7 +1,7 @@
 :root {
     --bg-dark: #05050a;
-    --accent: #00ffcc;
-    --accent-dim: rgba(0, 255, 204, 0.2);
+    --accent: #ff3b3b;
+    --accent-dim: rgba(255, 59, 59, 0.2);
     --text-main: #ffffff;
     --text-dim: #8892b0;
     --glass-bg: rgba(15, 15, 25, 0.6);
@@ -136,7 +136,7 @@ a {
 
 .glass-panel:hover {
     border-color: var(--accent-dim);
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.1);
 }
 
 /* Navigation */
@@ -720,3 +720,5 @@ footer a:hover {
     opacity: 0;
     transition: opacity 0.3s;
 }
+
+
