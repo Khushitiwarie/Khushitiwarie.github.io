@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Tiwari — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Spider Cursor -->
+    <div id="spider-cursor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <circle cx="12" cy="14" r="3" />
+            <circle cx="12" cy="10" r="1.5" />
+            <g class="legs-left" stroke="white" stroke-width="1.5" stroke-linecap="round">
+                <path d="M 10.5 10 L 6 6" />
+                <path d="M 10 12 L 4 11" />
+                <path d="M 9.5 14 L 5 17" />
+                <path d="M 10 15 L 8 21" />
+            </g>
+            <g class="legs-right" stroke="white" stroke-width="1.5" stroke-linecap="round">
+                <path d="M 13.5 10 L 18 6" />
+                <path d="M 14 12 L 20 11" />
+                <path d="M 14.5 14 L 19 17" />
+                <path d="M 14 15 L 16 21" />
+            </g>
+        </svg>
+    </div>
+
+    <!-- WebGL Background -->
+    <div id="canvas-container"></div>
+
+    <!-- Opening Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <svg class="spiderman-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <g class="spider-body" fill="#ff2a2a">
+                    <path d="M100 130 C 80 130, 75 80, 85 70 C 90 65, 95 65, 100 65 C 105 65, 110 65, 115 70 C 125 80, 120 130, 100 130 Z" />
+                    <circle cx="100" cy="50" r="14" />
+                </g>
+                <g class="spider-legs" fill="none" stroke="#ff2a2a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+                    <path class="leg" d="M 85 75 L 45 40 L 35 75" />
+                    <path class="leg" d="M 85 85 L 30 80 L 25 115" />
+                    <path class="leg" d="M 85 95 L 45 140 L 35 180" />
+                    <path class="leg" d="M 85 110 L 70 160 L 60 195" />
+                    <path class="leg" d="M 115 75 L 155 40 L 165 75" />
+                    <path class="leg" d="M 115 85 L 170 80 L 175 115" />
+                    <path class="leg" d="M 115 95 L 155 140 L 165 180" />
+                    <path class="leg" d="M 115 110 L 130 160 L 140 195" />
+                </g>
+            </svg>
+            <div class="loader-text">SPIDER PROTOCOL INITIATED</div>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <a class="logo" href="#home" aria-label="Home">KT</a>
+        <div class="links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content glass-panel">
+                <div class="kicker">SYSTEM ONLINE // STATUS: OPTIMAL</div>
+                <h1 class="glitch" data-text="Khushi Tiwari">Khushi Tiwari</h1>
+                <div class="hero-sub">Coder // Software Enthusiast</div>
+                <p class="intro">Computer Science and Engineering student exploring Artificial Intelligence, Machine Learning, and Deep Learning.</p>
+                <div class="ctas">
+                    <a class="btn primary" href="https://github.com/Khushitiwarie" target="_blank" rel="noopener">GITHUB</a>
+                    <a class="btn" href="resume.pdf" target="_blank" rel="noopener">RESUME</a>
+                </div>
+            </div>
+            <div class="profile-container glass-panel">
+                <div class="tech-ring"></div>
+                <div class="tech-ring inner"></div>
+                <img class="profile-photo" src="profile.jpg" alt="Khushi Tiwari">
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-label">01 // INTRODUCTION</span>
+                <h2 class="section-title">ABOUT ME</h2>
+            </div>
+            <div class="about-grid reveal">
+                <div class="about-copy glass-panel">
+                    <p>I'm a Computer Science and Engineering student at Kanpur Institute of Technology, passionate about Artificial Intelligence, Machine Learning, Deep Learning and emerging technologies.</p>
+                    <p>I enjoy learning through hands-on projects, experimenting with technology and solving real-world problems.</p>
+                </div>
+                <div class="facts glass-panel">
+                    <div class="fact">
+                        <span>EDUCATION</span>
+                        B.Tech — Computer Science & Engineering
+                    </div>
+                    <div class="fact">
+                        <span>INSTITUTE</span>
+                        Kanpur Institute of Technology
+                    </div>
+                    <div class="fact">
+                        <span>PERIOD</span>
+                        2024 — 2028
+                    </div>
+                    <div class="fact">
+                        <span>FOCUS</span>
+                        AI • ML • Deep Learning
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-label">02 // EXPERIENCE</span>
+                <h2 class="section-title">EXPERIENCE</h2>
+            </div>
+            <div class="timeline reveal">
+                <div class="experience-item glass-panel">
+                    <div class="year">SEPT 2025 — PRESENT</div>
+                    <div class="role">Internship Trainee</div>
+                    <div class="company">DRDO · MINISTRY OF DEFENCE</div>
+                    <p class="desc">Research-oriented exposure to structured engineering workflows and real-world defence technology projects.</p>
+                </div>
+                <div class="experience-item glass-panel">
+                    <div class="year">JUNE 2025 — JULY 2025</div>
+                    <div class="role">Summer Intern</div>
+                    <div class="company">HINDUSTAN AERONAUTICS LIMITED · AVIONICS DIVISION</div>
+                    <p class="desc">Exposure to avionics systems, defence-grade engineering and system operations.</p>
+                </div>
+                <div class="experience-item glass-panel">
+                    <div class="year">JUNE 2025 — NOV 2025</div>
+                    <div class="role">Campus Ambassador</div>
+                    <div class="company">E-CELL · IIT BOMBAY</div>
+                    <p class="desc">Represented the entrepreneurship cell while promoting innovation, leadership and entrepreneurial initiatives among students.</p>
+                </div>
+                <div class="experience-item glass-panel">
+                    <div class="year">JUNE 2024 — DEC 2024</div>
+                    <div class="role">Leadership Program Fellow</div>
+                    <div class="company">ASPIRE INSTITUTE</div>
+                    <p class="desc">Participated in an international leadership development program focused on global collaboration, strategic thinking and interdisciplinary problem-solving.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-label">03 // SELECTED WORK</span>
+                <h2 class="section-title">PROJECTS</h2>
+            </div>
+            <div class="projects-grid reveal">
+                <article class="project glass-panel">
+                    <div class="project-num">SYS.01</div>
+                    <h3>Machine Learning Mini-Projects</h3>
+                    <p>Independent hands-on work involving ML model implementation, data preprocessing and exploratory analysis to strengthen machine learning fundamentals.</p>
+                    <div class="tags">
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">MACHINE LEARNING</span>
+                        <span class="tag">DATA PREPROCESSING</span>
+                        <span class="tag">EDA</span>
+                    </div>
+                </article>
+                <article class="project glass-panel">
+                    <div class="project-num">SYS.02</div>
+                    <h3>Deep Learning Study Exercises</h3>
+                    <p>Hands-on learning involving neural networks, basic CNNs, model training workflows and conceptual understanding of deep learning architectures.</p>
+                    <div class="tags">
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">DEEP LEARNING</span>
+                        <span class="tag">NEURAL NETWORKS</span>
+                        <span class="tag">CNN</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-label">04 // CAPABILITIES</span>
+                <h2 class="section-title">TOOLS & THINKING</h2>
+            </div>
+            <div class="skills-container reveal">
+                <div class="skill-wrap">
+                    <div class="skill glass-panel">Python</div>
+                    <div class="skill glass-panel">JavaScript</div>
+                    <div class="skill glass-panel">Machine Learning</div>
+                    <div class="skill glass-panel">Deep Learning</div>
+                    <div class="skill glass-panel">Leadership</div>
+                    <div class="skill glass-panel">Communication</div>
+                    <div class="skill glass-panel">Team Collaboration</div>
+                </div>
+            </div>
+            
+            <div class="section-header reveal" style="margin-top: 100px;">
+                <span class="section-label">05 // BEYOND CODE</span>
+                <h2 class="section-title">ACHIEVEMENTS</h2>
+            </div>
+            <div class="achievements-grid reveal">
+                <div class="achievement glass-panel">
+                    <b>Artificial Intelligence</b>
+                    <p>Certified in Artificial Intelligence.</p>
+                </div>
+                <div class="achievement glass-panel">
+                    <b>Space Technology</b>
+                    <p>Certified in Applications of Space Technology.</p>
+                </div>
+                <div class="achievement glass-panel">
+                    <b>SRIJAN 2024</b>
+                    <p>Student Induction Programme — Participant.</p>
+                </div>
+                <div class="achievement glass-panel">
+                    <b>Debate Competition</b>
+                    <p>Certificate of Participation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding glass-panel" style="margin: 0 5vw 100px; padding: 100px 5vw;">
+            <div class="section-label">06 // MINDSET</div>
+            <h2 class="section-title">EXPLORING<br>LEARNING<br>BUILDING</h2>
+            <p>Ready to collaborate on innovative solutions.</p>
+            <div class="ctas" style="justify-content: center;">
+                <a class="btn primary" href="mailto:khushitiwarie@gmail.com">INITIATE CONTACT</a>
+                <a class="btn" href="https://linkedin.com/in/khushi-tiwari-65242a323" target="_blank" rel="noopener">LINKEDIN</a>
+            </div>
+        </section>
+
+        <footer>
+            <span>KHUSHI TIWARI</span>
+            <span>© 2026 · BUILT WITH CURIOSITY</span>
+            <a href="#home">BACK TO TOP ↑</a>
+        </footer>
+    </main>
+
+    <!-- Three.js Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
